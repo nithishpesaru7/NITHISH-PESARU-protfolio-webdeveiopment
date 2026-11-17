@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Page Metadata -->
+    <title>Nithish Pesaru — Aspiring Software Developer | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for Nithish Pesaru, a 1st Year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+
+    <!-- Open Graph / Social Sharing Metadata -->
+    <meta property="og:title" content="Nithish Pesaru — Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Personal portfolio website for Nithish Pesaru, a 1st Year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Display) + DM Sans (Body) + JetBrains Mono (Code Preview) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS3 Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ====================================================================
+         HEADER & NAVIGATION BAR
+         ==================================================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-link">Nithish Pesaru</a>
+
+        <!-- CSS-only mobile hamburger toggle (no JavaScript) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span class="hamburger-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </label>
+
+        <!-- Zone 2: Primary Navigation Links -->
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#goals" class="nav-link">Goals</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action Button -->
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ==================================================================
+           1. HOME / HERO SECTION
+           ================================================================== -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Introduction & Actions -->
+            <div class="hero-content">
+              <p class="hero-kicker">Hello, I am</p>
+              <h1 class="hero-name">NITHISH PESARU</h1>
+              <h2 class="hero-role">Aspiring Software Developer</h2>
+
+              <p class="hero-subtitle">
+                <span>B.Tech CSE Student</span>
+                <span class="meta-sep" aria-hidden="true">&middot;</span>
+                <span>Python Beginner</span>
+                <span class="meta-sep" aria-hidden="true">&middot;</span>
+                <span>Web Development Enthusiast</span>
+              </p>
+
+              <p class="hero-intro">
+                I am a first-year Computer Science and Engineering student at Joy
+                University (in collaboration with NIAT/NxtWave), driven by
+                curiosity for how software works and a commitment to building
+                clean, practical projects while strengthening my programming
+                foundations every day.
+              </p>
+
+              <!-- Primary Hero Buttons -->
+              <div class="hero-cta-row">
+                <!--
+                  Download CV Button:
+                  Generates a clean, instant text CV download using pure HTML5 (no JavaScript).
+                  Replace href with "./resume.pdf" once you create a PDF resume file.
+                -->
+                <a
+                  href="data:text/plain;charset=utf-8,NITHISH%20PESARU%0AAspiring%20Software%20Developer%0A%0AEducation%3A%0AB.Tech%20in%20Computer%20Science%20and%20Engineering%20(CSE)%0AJoy%20University%20(in%20collaboration%20with%20NIAT%2FNxtWave)%0AStatus%3A%201st%20Year%20Student%0A%0ASkills%3A%0A-%20Python%20(Beginner)%0A-%20HTML5%0A-%20CSS3%0A-%20Basic%20Web%20Development%0A-%20Computer%20Science%20Fundamentals%0A-%20Problem%20Solving%0A%0AContact%3A%0AEmail%3A%20nithishpesaru7%40gmail.com%0AGitHub%3A%20https%3A%2F%2Fgithub.com%2Fnithishpesaru7"
+                  download="Nithish_Pesaru_CV.txt"
+                  class="btn btn-primary"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  <span>Download CV</span>
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <span>Contact Me</span>
+                </a>
+              </div>
+
+              <!-- Social Links -->
+              <div class="hero-socials">
+                <a
+                  href="https://github.com/nithishpesaru7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Nithish Pesaru on GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <!-- Replace with your exact LinkedIn profile URL when ready -->
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Nithish Pesaru on LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Profile Photo -->
+            <div class="hero-visual">
+              <figure class="profile-frame">
+                <img
+                  src="/assets/aistudio/WhatsApp_Image_2026-11-16_at_9.55.13_AM_802c4ec6.jpeg"
+                  alt="Portrait photograph of Nithish Pesaru"
+                  class="profile-photo"
+                  referrerpolicy="no-referrer"
+                />
+                <figcaption class="profile-caption">
+                  <span class="profile-caption-name">Nithish Pesaru</span>
+                  <span class="profile-caption-meta">
+                    1st Year B.Tech CSE &middot; Joy University
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Full-Width Academic Snapshot Strip -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-label">Degree Program</span>
+              <span class="highlight-value">B.Tech Computer Science</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">University</span>
+              <span class="highlight-value">Joy University</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Collaboration</span>
+              <span class="highlight-value">NIAT / NxtWave</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Current Focus</span>
+              <span class="highlight-value">Python, HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           2. ABOUT ME SECTION
+           ================================================================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">About Me</span>
+            <h2 class="section-title">
+              Building strong engineering foundations from year one
+            </h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-prose">
+              <p>
+                I am <strong>Nithish Pesaru</strong>, a first-year B.Tech
+                Computer Science and Engineering (CSE) student at
+                <strong>Joy University</strong> in academic collaboration with
+                <strong>NIAT/NxtWave</strong>.
+              </p>
+              <p>
+                I am deeply passionate about programming and modern technology.
+                Right now, I am focused on learning <strong>Python</strong>,
+                <strong>HTML5</strong>, <strong>CSS3</strong>, and core web
+                development concepts through hands-on practice and small
+                structured exercises.
+              </p>
+              <p>
+                I enjoy exploring new technologies, strengthening my
+                problem-solving skills, and turning concepts into creative and
+                useful projects. My long-term goal is to grow into a skilled
+                professional software developer who builds reliable, user-friendly
+                software.
+              </p>
+            </div>
+
+            <aside class="glass-card about-details-card" aria-label="Quick Profile Summary">
+              <h3 class="about-details-title">Profile Overview</h3>
+              <ul class="about-list">
+                <li>
+                  <span class="about-key">Full Name</span>
+                  <span class="about-val">Nithish Pesaru</span>
+                </li>
+                <li>
+                  <span class="about-key">Current Status</span>
+                  <span class="about-val">1st Year B.Tech CSE Student</span>
+                </li>
+                <li>
+                  <span class="about-key">Institution</span>
+                  <span class="about-val">Joy University &middot; NIAT/NxtWave</span>
+                </li>
+                <li>
+                  <span class="about-key">Career Goal</span>
+                  <span class="about-val">Aspiring Software Developer</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           3. SKILLS SECTION
+           ================================================================== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Skills</span>
+            <h2 class="section-title">Foundational technologies and core strengths</h2>
+            <p class="section-subtitle">
+              An honest overview of the languages, web technologies, and
+              problem-solving fundamentals I am actively practicing.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <span class="skill-meta">Beginner &middot; Currently Learning</span>
+              <h3 class="skill-title">Python</h3>
+              <p class="skill-desc">
+                Writing beginner-level programs using variables, loops,
+                conditionals, and functions to build programming logic.
+              </p>
+            </article>
+
+            <!-- Skill 2: HTML5 -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <span class="skill-meta">Core Foundation</span>
+              <h3 class="skill-title">HTML5</h3>
+              <p class="skill-desc">
+                Structuring clean, accessible, semantic web documents using
+                standard HTML5 elements, landmarks, and links.
+              </p>
+            </article>
+
+            <!-- Skill 3: CSS3 -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M3 9h18" />
+                  <path d="M9 21V9" />
+                </svg>
+              </div>
+              <span class="skill-meta">Core Foundation</span>
+              <h3 class="skill-title">CSS3</h3>
+              <p class="skill-desc">
+                Styling modern interfaces with Flexbox, CSS Grid, custom
+                properties, smooth transitions, and responsive media queries.
+              </p>
+            </article>
+
+            <!-- Skill 4: Basic Web Development -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+              <span class="skill-meta">Hands-On Practice</span>
+              <h3 class="skill-title">Basic Web Development</h3>
+              <p class="skill-desc">
+                Building static multi-section pages, organizing clean project
+                files, and adapting layouts across mobile and desktop screens.
+              </p>
+            </article>
+
+            <!-- Skill 5: Computer Science Fundamentals -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="16" height="16" x="4" y="4" rx="2" />
+                  <rect width="6" height="6" x="9" y="9" rx="1" />
+                  <path d="M15 2v2" />
+                  <path d="M15 20v2" />
+                  <path d="M2 15h2" />
+                  <path d="M2 9h2" />
+                  <path d="M20 15h2" />
+                  <path d="M20 9h2" />
+                  <path d="M9 2v2" />
+                  <path d="M9 20v2" />
+                </svg>
+              </div>
+              <span class="skill-meta">1st Year Curriculum</span>
+              <h3 class="skill-title">Computer Science Fundamentals</h3>
+              <p class="skill-desc">
+                Studying core computing principles, structured logic, and how
+                software systems are organized in B.Tech CSE coursework.
+              </p>
+            </article>
+
+            <!-- Skill 6: Problem Solving -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
+                  <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
+                </svg>
+              </div>
+              <span class="skill-meta">Growing Practice</span>
+              <h3 class="skill-title">Problem Solving</h3>
+              <p class="skill-desc">
+                Breaking down programming exercises into clear, logical steps
+                and testing solutions consistently to improve code clarity.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           4. PROJECTS SECTION
+           ================================================================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Projects</span>
+            <h2 class="section-title">Selected learning &amp; web projects</h2>
+            <p class="section-subtitle">
+              Practical projects built to apply HTML5, CSS3, and Python
+              programming fundamentals.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Personal Portfolio Website -->
+            <article class="glass-card project-card">
+              <div class="project-preview" aria-label="Personal Portfolio Website preview placeholder">
+                <div class="preview-chrome">
+                  <span>Project 01</span>
+                  <span class="preview-label">index.html &middot; style.css</span>
+                </div>
+                <div class="preview-body">
+                  <div class="preview-wireframe">
+                    <div class="wire-bar accent"></div>
+                    <div class="wire-bar wide"></div>
+                    <div class="wire-bar mid"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tech">HTML5 &middot; CSS3</span>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A personal website designed and coded from scratch to showcase
+                  my profile, education, skills, career goals, and projects in a
+                  clean responsive layout.
+                </p>
+
+                <div class="project-footer">
+                  <!-- Update href with your specific repository URL once pushed to GitHub -->
+                  <a
+                    href="https://github.com/nithishpesaru7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Python Programming Projects -->
+            <article class="glass-card project-card">
+              <div class="project-preview" aria-label="Python Programming Projects preview placeholder">
+                <div class="preview-chrome">
+                  <span>Project 02</span>
+                  <span class="preview-label">main.py</span>
+                </div>
+                <div class="preview-body">
+                  <pre class="preview-code">def greet(name):
+    return f"Hello, {name}!"</pre>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tech">Python</span>
+                <h3 class="project-title">Python Programming Projects</h3>
+                <p class="project-desc">
+                  A growing collection of beginner-level Python programs and
+                  logical programming exercises practicing control flow, loops,
+                  and functions.
+                </p>
+
+                <div class="project-footer">
+                  <!-- Update href with your specific repository URL once pushed to GitHub -->
+                  <a
+                    href="https://github.com/nithishpesaru7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Responsive Landing Page -->
+            <article class="glass-card project-card">
+              <div class="project-preview" aria-label="Responsive Landing Page preview placeholder">
+                <div class="preview-chrome">
+                  <span>Project 03</span>
+                  <span class="preview-label">responsive-grid</span>
+                </div>
+                <div class="preview-body">
+                  <div class="preview-layout-blocks">
+                    <div class="layout-block full"></div>
+                    <div class="layout-block"></div>
+                    <div class="layout-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tech">HTML5 &middot; CSS3</span>
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-desc">
+                  A simple, modern webpage built to practice responsive layouts,
+                  Flexbox alignment, typography hierarchy, and mobile media
+                  queries.
+                </p>
+
+                <div class="project-footer">
+                  <!-- Update href with your specific repository URL once pushed to GitHub -->
+                  <a
+                    href="https://github.com/nithishpesaru7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           5. EDUCATION SECTION
+           ================================================================== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Education</span>
+            <h2 class="section-title">Academic background</h2>
+          </div>
+
+          <article class="glass-card education-card">
+            <div class="edu-status">
+              <span class="edu-years">Currently Pursuing &middot; 1st Year</span>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <p class="edu-branch">Computer Science and Engineering (CSE)</p>
+            </div>
+
+            <div class="edu-details">
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Institution</span>
+                <span class="edu-detail-value">Joy University</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Academic Collaboration</span>
+                <span class="edu-detail-value">NIAT / NxtWave</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Branch</span>
+                <span class="edu-detail-value">Computer Science &amp; Engineering</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="edu-detail-label">Status</span>
+                <span class="edu-detail-value">1st Year Undergraduate</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           6. CAREER GOALS SECTION
+           ================================================================== -->
+      <section id="goals" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">Career Goals</span>
+            <h2 class="section-title">Where I am aiming next</h2>
+            <p class="section-subtitle">
+              Clear milestones guiding my learning path during my B.Tech journey.
+            </p>
+          </div>
+
+          <div class="goals-grid">
+            <article class="glass-card goal-card featured">
+              <span class="goal-index">01.</span>
+              <h3 class="goal-title">Become a Professional Software Developer</h3>
+              <p class="goal-desc">
+                Build a strong engineering mindset capable of designing,
+                developing, and maintaining dependable software applications.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">02.</span>
+              <h3 class="goal-title">Improve Programming &amp; Technical Skills</h3>
+              <p class="goal-desc">
+                Strengthen Python programming, problem-solving fluency, and
+                core computer science concepts through daily practice.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">03.</span>
+              <h3 class="goal-title">Build Real-World Projects</h3>
+              <p class="goal-desc">
+                Apply classroom knowledge to practical applications that solve
+                everyday problems and expand my project portfolio.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">04.</span>
+              <h3 class="goal-title">Learn Modern Web Technologies</h3>
+              <p class="goal-desc">
+                Progress steadily from HTML5 and CSS3 mastery into modern
+                front-end and full-stack web development stacks.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">05.</span>
+              <h3 class="goal-title">Gain Practical Industry Experience</h3>
+              <p class="goal-desc">
+                Prepare for early internships, collaborative team workflows,
+                and real-world software engineering environments.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           7. CONTACT SECTION
+           ================================================================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="glass-card contact-card">
+            <div class="contact-copy">
+              <span class="section-kicker">Contact</span>
+              <h2 class="contact-title">Let&apos;s connect and collaborate</h2>
+              <p class="contact-message">
+                I am always open to learning opportunities, beginner-friendly
+                internships, mentorship, and connecting with fellow students and
+                developers. Feel free to reach out directly via email or explore
+                my GitHub profile.
+              </p>
+
+              <div class="contact-cta-wrap">
+                <a href="mailto:nithishpesaru7@gmail.com" class="btn btn-primary">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <span>Send an Email</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-links">
+              <a href="mailto:nithishpesaru7@gmail.com" class="contact-channel">
+                <span class="contact-channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </span>
+                <span class="contact-channel-text">
+                  <span class="contact-channel-label">Email</span>
+                  <span class="contact-channel-value">nithishpesaru7@gmail.com</span>
+                </span>
+              </a>
+
+              <a
+                href="https://github.com/nithishpesaru7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-channel"
+              >
+                <span class="contact-channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                    />
+                  </svg>
+                </span>
+                <span class="contact-channel-text">
+                  <span class="contact-channel-label">GitHub</span>
+                  <span class="contact-channel-value">github.com/nithishpesaru7</span>
+                </span>
+              </a>
+
+              <!-- Replace with your exact LinkedIn profile URL when ready -->
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-channel"
+              >
+                <span class="contact-channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                </span>
+                <span class="contact-channel-text">
+                  <span class="contact-channel-label">LinkedIn</span>
+                  <span class="contact-channel-value">Connect on LinkedIn</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 Nithish Pesaru &middot; Built with HTML5 &amp; CSS3
+        </p>
+        <nav class="footer-links" aria-label="Footer Navigation">
+          <a href="#home">Back to Top</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
